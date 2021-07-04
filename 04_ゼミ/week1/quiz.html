@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h3>まっきーの一番好きなものはなんでしょう？</h3>
+    <button id="okonomi-button">お好み焼き</button>
+    <button id="akasi-button">明石焼</button>
+    <button id="tako-button">たこ焼き</button>
+    <div id="display"></div>
+
+    <script>
+      //HTMLからJavaScriptに要素を取ってくるよ！
+      const okonomiButton = document.getElementById("okonomi-button")
+      const akasiButton = document.getElementById("akasi-button")
+      const takoButton = document.getElementById("tako-button")
+
+      const display = document.getElementById("display")
+      //取ってきた要素をいじるよ！
+      okonomiButton.onclick = function() {
+        display.textContent = "好きやけど一番ではないな…二番くらい！"
+      }
+
+      akasiButton.onclick = function() {
+        display.textContent =
+          "大好き！一番好き！ソースと出汁で食べるのが一番美味しいよ！"
+      }
+
+      takoButton.onclick = function() {
+        display.textContent = "そこまで好きなわけじゃないな…"
+      }
+    </script>
+  </body>
+</html>
