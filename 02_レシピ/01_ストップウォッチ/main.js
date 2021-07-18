@@ -1,5 +1,6 @@
 const display = document.getElementById("display")
 const button = document.getElementById("button")
+const button = document.getElementsById("nullbutton")
 
 let count = 0
 const countUp = function() {
