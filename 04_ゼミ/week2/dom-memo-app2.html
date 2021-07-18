@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>WebExpertコーステンプレート</title>
+  </head>
+  <body>
+    <input id="memo-input"></input>
+    <button id="add-button">追加</button>
+    <div id="memo-container"></div>
+    
+    <script>
+      const memoInput=document.getElementById("memo-input")
+      const addButton = document.getElementById("add-button")
+      const memoContainer = document.getElementById("memo-container")
+
+      addButton.onclick = function(){
+        // divタグを作る(この時点では、cardは空で、場所も指定されていない)
+        const card = document.createElement("div")
+
+        // cardの中身を、memoInputの内容にする
+        card.textContent = memoInput.value
+        
+        // memoContainerに追加
+        memoContainer.append(card)
+        memoInput.value = ""
+      }
+    </script>
+  </body>
+</html>
