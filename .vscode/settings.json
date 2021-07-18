@@ -1,4 +1,5 @@
 {
   "extensions.ignoreRecommendations": false,
   "liveServer.settings.port": 5555,
+  "git.ignoreLimitWarning": true
 }
