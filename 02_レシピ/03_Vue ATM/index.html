@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="atm">
+
+  <section class="nyuuryoku"id="atm">
+    <h2>入力画面</h2>
+      <!--双方向データバインディング-->
+      <input type="number" v-model="nyuuryoku" id="atm" />
+       <div id="atm">
+      <div>入力金額:{{nyuuryoku}}円</div></div>
+      <button v-on:click="nyuukin" id="atm">入金</button>
+      <button v-on:click="syukkin" id="atm">出金</button>
+ </section>
+
+ <section class="zandaka" id="atm">
+      <h2>口座残高</h2>
+      <div id="atm">
+       残高:{{zandaka}}円</div></div>
+ </section>
+
+<section class="logs" id="atm">
+    <h2>取引記録</h2>
+    <div id="atm">日付:{{date}}</div>
+  <div id="atm"> 操作:{{ move }}</div>
+  <div id="atm">金額:{{ money }}</div>
+
+</section>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="main.js"></script>
+  </div>
+  </body>
+</html>
