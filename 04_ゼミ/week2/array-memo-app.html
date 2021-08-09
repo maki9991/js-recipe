@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="array-memo-app.css">
     <title>WebExpertコーステンプレート</title>
   </head>
   <body>
@@ -16,13 +17,13 @@
       const addButton=document.getElementById("add-button")
       const memoContainer=document.getElementById("memo-container")
       
-      let memos=["おはよう","こんにちは","こんばんは"]
+      let memos=[""]
 
       addButton.onclick=function(){
         
         memos.push(memoInput.value)
-        //memoContainrの中身を消す
-        memoContainer.innerHTML=""
+        //memoContainrの中身を消す//消せんが！？！？！？！？！？！？
+        
         
         for (let n = 0; n < memos.length; n++){
         // divタグを作る(この時点では、cardは空で、場所も指定されていない)

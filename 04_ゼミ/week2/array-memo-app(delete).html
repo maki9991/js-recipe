@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="array-memo-app.css">
     <title>WebExpertコーステンプレート</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
       const sortButton= document.getElementById("sort-button")
       const deleteButton=document.getElementById("delete-button")
 
-      let memos=["おはよう","こんにちは","こんばんは"]
+      let memos=[""]
 //関数の定義
 //divタグを作って、要素をmemoContainerに追加する関数dry
 const dry=function(){
@@ -48,33 +49,10 @@ const del=function(){
         dry()
         memoInput.value=""
 
-//memoContainer.innerHTML=""
-
-        //memoContainrの中身を消す
-       /* memoContainer.innerHTML=""
-        
-        for (let n = 0; n < memos.length; n++){
-        // divタグを作る(この時点では、cardは空で、場所も指定されていない)
-        const card = document.createElement("div")
-        
-        card.textContent=memos[n]
-        // memoContainerに追加
-        memoContainer.append(card)
-      }*/
     }
     sortButton.onclick = function(){
-      memos.sort();
-     /* memoContainer.innerHTML=""
-      for (let n = 0; n < memos.length; n++){
-        // divタグを作る(この時点では、cardは空で、場所も指定されていない)
-        const card = document.createElement("div")
-        
-        card.textContent=memos[n]
-        // memoContainerに追加
-        memoContainer.append(card)
-      }*/
+      memos.sort();//並べ替える関数
 dry()
-
     }
 
     deleteButton.onclick=function(){
